@@ -1,0 +1,8 @@
+Renzo BTC Lab V22 — mobile performance pass
+- Main signal/metrics loop now checks every 350ms while page is visible.
+- Expensive tables, charts, and secondary panels update on separate throttled schedules.
+- Scalp intelligence refreshes approximately every 600ms (subject to browser scheduling).
+- Canvas backing-store sizes only change when dimensions change.
+- No prediction accuracy claims; data freshness gates remain enabled.
+- Browser background throttling and provider latency still apply.
+Deploy the extracted folder to Netlify or commit all original files to GitHub.

@@ -1,0 +1,9 @@
+Renzo BTC Lab V23 — Mobile Stability
+
+Preserves the V22 galaxy appearance and all existing panels.
+- Detects a Hyperliquid websocket that stays open but delivers no messages for 45 seconds and reconnects.
+- Debounces chart resize redraws by 180 ms.
+- Keeps signal calculations on a 450 ms UI cadence while reducing heavier DOM/chart refreshes.
+- Keeps stale-trade WAIT gating and real-feed-only behavior.
+
+Important: These are browser scheduling changes, not proven prediction improvements. Market stream latency, accuracy, profitability and production Netlify deployment have not been independently validated. Test with no real-money exposure first.
